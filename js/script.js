@@ -15,11 +15,19 @@ var students = ["John", "FSF", "Jamil", "FSF", "Roman", "FSF"];
 // }
 
 
-function printStudentInfo() {
+function printStudentInfo(studentName, studentCourse) {
+    // The content in () in that function is a parameter.
     console.log("Welcome to the class!");
-    console.log("Name:", students[0]);
-    console.log("Course:", students[1]);
+    console.log("Name:", studentName);
+    console.log("Course:", studentCourse);
     console.log("Please utilize office hours for help!");
 }
 
-printStudentInfo ()
+// printStudentInfo(0);
+// The 0 is an argument.
+printStudentInfo(students[0], students[1]);
+
+
+// printStudentInfo(students[0]);
+// Equivalent to:
+// printStudentInfo("John");
