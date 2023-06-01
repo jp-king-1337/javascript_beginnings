@@ -63,7 +63,7 @@ function generatePass() {
     }
 
     if (includeUppercase) {
-        combinedChars = combinedChars.concat(uppercase)
+        combinedChars = combinedChars.concat(uppercase);
     }
 
     if (includeNumbers) {
