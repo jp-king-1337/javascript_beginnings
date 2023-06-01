@@ -24,8 +24,10 @@ var combined = lowercase.concat(uppercase).concat(numbers).concat(specialCharact
 // These are synchronous. One prompt cannot move on until it is complete.
 var amount = Number(prompt("Please provide an amount."));
 var includeLowercase = confirm("Click OK if you want lowercase letters.");
+var includeUppercase = confirm("Click OK if you want uppercase letters.");
 
-console.log(includeLowercase);
+
+console.log(amount, includeLowercase, includeUppercase);
 
 
 
