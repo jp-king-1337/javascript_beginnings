@@ -20,3 +20,5 @@ var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 var specialCharacters = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~']
 var combined = lowercase.concat(uppercase).concat(numbers).concat(specialCharacters);
 
+
+prompt("Please provide an amount.")
