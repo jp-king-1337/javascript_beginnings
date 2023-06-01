@@ -21,9 +21,11 @@ var specialCharacters = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', 
 var combined = lowercase.concat(uppercase).concat(numbers).concat(specialCharacters);
 
 
-var amount = +prompt("Please provide an amount.");
+// These are synchronous. One prompt cannot move on until it is complete.
+var amount = Number(prompt("Please provide an amount."));
+var includeLowercase = confirm("Click OK if you want lowercase letters.");
 
-console.log(amount);
+console.log(includeLowercase);
 
 
 
