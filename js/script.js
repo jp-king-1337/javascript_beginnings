@@ -49,13 +49,20 @@
 
 
 function printStuff(name, age, fruits) {
-var output = "";
+    var output = "";
 
     for (var index = 0; index < fruits.length; index++) {
         // console.log(fruits[index]);
-        console.log(output += fruits[index]);
+        if (index === 0) {
+            output += fruits[index];
+        } else {
+            output += ", " + fruits[index];
+        }
     }
+
+    console.log(output);
 }
+
 
 printStuff("JD", 43, ["apple", "orange", "grape"]);
 
