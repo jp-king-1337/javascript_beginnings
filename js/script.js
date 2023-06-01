@@ -1,18 +1,18 @@
-var students = ["John", "FSF", "Jamil", "FSF", "Roman", "FSF"];
+// var students = ["John", "FSF", "Jamil", "FSF", "Roman", "FSF"];
 
 
 // TASK: Use the for loop to call the function and print the full list of students.
 
-for (var index = 0; index < students.length; index += 2) {
-    printStudentInfo(students[index], students[index + 1]);
-}
+// for (var index = 0; index < students.length; index += 2) {
+//     printStudentInfo(students[index], students[index + 1]);
+// }
 
-function printStudentInfo(studentName, studentCourse) {
-console.log("Welcome to the class!");
-console.log("Name:", studentName);
-console.log("Course:", studentCourse);
-console.log("Please utilize office hours for help!");
-}
+// function printStudentInfo(studentName, studentCourse) {
+// console.log("Welcome to the class!");
+// console.log("Name:", studentName);
+// console.log("Course:", studentCourse);
+// console.log("Please utilize office hours for help!");
+// }
 
 
 
@@ -48,8 +48,16 @@ console.log("Please utilize office hours for help!");
 // printStudentInfo("John");
 
 
-// function printStuff(something, name, age) {
-//     console.log(something);
-// }
+function printStuff(name, age, fruits) {
+var output = "";
 
-// printStuff("JD", 43, "something");
+    for (var index = 0; index < fruits.length; index++) {
+        // console.log(fruits[index]);
+        console.log(output += fruits[index]);
+    }
+}
+
+printStuff("JD", 43, ["apple", "orange", "grape"]);
+
+
+
