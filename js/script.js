@@ -91,4 +91,7 @@ var specialCharacters = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', 
 // var combined = lowercase.concat(uppercase).concat(numbers);
 // console.log(combined);
 
+var random = Math.random();
+var floored = Math.floor(random * lowercase.length);
 
+console.log(floored);
