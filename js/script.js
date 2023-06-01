@@ -35,7 +35,7 @@ function getUserInput() {
     var includeNumbers = confirm("Click OK if you want to include numbers.");
     var includeSpecialCharacters = confirm("Click OK if you want to include special characters.");
 
-    var output = [amount, includeLowercase, includeUppercase, includeNumbers, includeSpecialCharacters]
+    var output = [amount, includeLowercase, includeUppercase, includeNumbers, includeSpecialCharacters];
     return output;
 }
 
