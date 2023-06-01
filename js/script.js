@@ -21,7 +21,7 @@ var specialCharacters = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', 
 var combined = lowercase.concat(uppercase).concat(numbers).concat(specialCharacters);
 
 
-var amount = prompt("Please provide an amount.");
+var amount = +prompt("Please provide an amount.");
 
 console.log(amount);
 
