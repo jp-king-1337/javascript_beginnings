@@ -91,7 +91,21 @@ var specialCharacters = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', 
 // var combined = lowercase.concat(uppercase).concat(numbers);
 // console.log(combined);
 
-var random = Math.random();
-var ranIndex = Math.floor(random * lowercase.length);
+// var amount = 50;
+// var random = Math.random();
+// var ranIndex = Math.floor(random * lowercase.length);
 
-console.log(lowercase[ranIndex]);
+// console.log(lowercase[ranIndex]);
+
+
+// TASK: given an amount, loop that amount of times to build a string of random letters from that array
+var amount = 50;
+var output = "";
+
+for (var index = 0; index < amount; index++) {
+    var random = Math.random();
+    var ranIndex = Math.floor(random * lowercase.length);
+    output += lowercase[ranIndex];
+}
+
+console.log(output);
