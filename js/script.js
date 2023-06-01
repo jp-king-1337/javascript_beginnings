@@ -20,26 +20,3 @@ var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 var specialCharacters = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~']
 var combined = lowercase.concat(uppercase).concat(numbers).concat(specialCharacters);
 
-// Prints lowercase followed by uppercase followed by numbers
-// var combined = lowercase.concat(uppercase).concat(numbers);
-// console.log(combined);
-
-// var amount = 50;
-// var random = Math.random();
-// var ranIndex = Math.floor(random * lowercase.length);
-
-// console.log(lowercase[ranIndex]);
-
-
-// TASK: given an amount, loop that amount of times to build a string of random letters from that array
-var amount = 50;
-var password = "";
-
-for (var index = 0; index < amount; index++) {
-    var random = Math.random();
-    var ranIndex = Math.floor(random * combined.length);
-    password += combined[ranIndex];
-}
-
-console.log(password);
-
