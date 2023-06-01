@@ -18,17 +18,30 @@ var lowercase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'
 var uppercase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 var specialCharacters = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~']
-var combined = lowercase.concat(uppercase).concat(numbers).concat(specialCharacters);
+var combinedArrays = lowercase.concat(uppercase).concat(numbers).concat(specialCharacters);
 
 
 // These are synchronous. One prompt cannot move on until it is complete.
-var amount = Number(prompt("Please provide an amount."));
-var includeLowercase = confirm("Click OK if you want lowercase letters.");
-var includeUppercase = confirm("Click OK if you want uppercase letters.");
+// var amount = Number(prompt("Please provide an amount."));
+// var includeLowercase = confirm("Click OK if you want lowercase letters.");
+// var includeUppercase = confirm("Click OK if you want uppercase letters.");
 
+// TASK: create a function that gets the amount of chars and returns a list of the amount and booleans for each of the character sets (charsets).
+function getUserInput() {
+    var amount = Number(prompt("Please provide an amount."));
+    var includeLowercase = confirm("Click OK if you want to include lowercase letters.");
+    var includeUppercase = confirm("Click OK if you want to include uppercase letters.");
+    var includeNumbers = confirm("Click OK if you want to include numbers.");
+    var includeSpecialCharacters = confirm("Click OK if you want to include special characters.");
 
-console.log(amount, includeLowercase, includeUppercase);
+    var output = [amount, includeLowercase, includeUppercase, includeNumbers, includeSpecialCharacters]
+    return output;
+}
 
+var userInput = getUserInput();
+console.log(userInput);
+
+alert("Thanks for your input!");
 
 
 
