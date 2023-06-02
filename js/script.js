@@ -47,23 +47,29 @@ function generatePass() {
     var includeUppercase = choices[2];
     var includeNumbers = choices[3];
     var includeSpecials = choices[4];
-    var chosenChars = [];
+    var chosenCharSets = [];
 
 
     if (includeLowercase) {
-        chosenChars = chosenChars.concat(lowercase);
+        chosenCharSets = chosenCharSets.concat(lowercase);
     }
     if (includeUppercase) {
-        chosenChars = chosenChars.concat(uppercase);
+        chosenCharSets = chosenCharSets.concat(uppercase);
     }
     if (includeNumbers) {
-        chosenChars = chosenChars.concat(numbers);
+        chosenCharSets = chosenCharSets.concat(numbers);
     }
     if (includeSpecials) {
-        chosenChars = chosenChars.concat(specials);
+        chosenCharSets = chosenCharSets.concat(specials);
     }
 
-    return generatePass();
+    console.log(chosenCharSets);
+
+    for (var count = 0)
+    
+
+
+    return pass;
 }
 
 var pass = generatePass();
