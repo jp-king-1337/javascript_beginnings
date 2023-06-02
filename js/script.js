@@ -51,16 +51,16 @@ function generatePass() {
 
 
     if (includeLowercase) {
-        chosenChars.concat(lowercase);
+        chosenChars = chosenChars.concat(lowercase);
     }
     if (includeUppercase) {
-        chosenChars.concat(uppercase);
+        chosenChars = chosenChars.concat(uppercase);
     }
     if (includeNumbers) {
-        chosenChars.concat(numbers);
+        chosenChars = chosenChars.concat(numbers);
     }
     if (includeSpecials) {
-        chosenChars.concat(specials);
+        chosenChars = chosenChars.concat(specials);
     }
 
     return generatePass();
