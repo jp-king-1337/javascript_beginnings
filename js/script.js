@@ -21,6 +21,7 @@ function getUserInput() {
     var includeNumbers = confirm("Click OK if you want to include numbers.");
     var includeSpecials = confirm("Click OK if you want to include special characters.");
 
+
     var output = [amount, includeLowercase, includeUppercase, includeNumbers, includeSpecials];
     return output;
 }
@@ -66,7 +67,7 @@ function generatePass() {
         pass += randomCharacter;
     }
 
-
+    
     return pass;
 }
 
