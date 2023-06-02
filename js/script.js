@@ -33,13 +33,6 @@ var choices = getUserInput();
 
 // TASK: Using our choices array, create a function that creates an array of the combined character sets based on the user's choices (hint - conditionals) and generates a resulting random string of characters in the amount chosen by the user. The function will return that generated string.
 function generatePass() {
-    // I need a string to hold the password
-    // I need the combined chars based on choices
-    // I need the amount variable to be the amount of characters the user wants in the password
-    // I need to use .concat to concatenate the choices to the end of the password string
-    // BUT only IF the choices were marked true by the user - conditional statements
-    // I need the output of this function to be returned
-
     var pass = "";
 
     var charAmount = choices[0];
