@@ -65,7 +65,11 @@ function generatePass() {
 
     console.log(chosenCharSets);
 
-    for (var count = 0; )
+    for (var count = 0; count < charAmount; count++) {
+        // Grab a random character from the chosenCharSets array
+        var randomNum = Math.random();
+        var randomIndex = Math.floor(randomNum * chosenCharSets.length)
+    }
     
 
 
