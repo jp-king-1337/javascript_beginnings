@@ -2,9 +2,9 @@
 var lowercase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var uppercase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-var specialCharacters = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~']
+var specials = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~']
 // Example of concatenation.
-var combinedArrays = lowercase.concat(uppercase).concat(numbers).concat(specialCharacters);
+var combinedArrays = lowercase.concat(uppercase).concat(numbers).concat(specials);
 
 
 // These are synchronous. One prompt cannot move on until it is complete.
@@ -26,48 +26,43 @@ function getUserInput() {
 }
 
 var choices = getUserInput();
-console.log(choices);
-
-alert("Thanks for your input!");
+// console.log(choices);
+// alert("Thanks for your input!");
 
 
 
 // TASK: Using our choices array, create a function that creates an array of the combined character sets based on the user's choices (hint - conditionals) and generates a resulting random string of characters in the amount chosen by the user. The function will return that generated string.
 function generatePass() {
-    var combinedChars = [];
-    var password = "";
+    // I need a string to hold the password
+    // I need the combined chars based on choices
+    // I need the amount variable to be the amount of characters the user wants in the password
+    // I need to use .concat to concatenate the choices to the end of the password string
+    // BUT only IF the choices were marked true by the user - conditional statements
+    // I need the output of this function to be returned
 
-    // Add the chosen charsets to our combined array.
-    var includeLowercase = choices[1];
-    var includeUppercase = choices[2];
-    var includeNumbers = choices[3];
-    var includeSpecials = choices[4];
+    var pass = "";
 
-    // Conditionally check each boolean to determine if we add to the array.
+
+    var includeLowercase = choices[1]
+    var includeUppercase = choices[2]
+    var includeNumbers = choices[3]
+    var includeSpecials = choices[4]
+    
     if (includeLowercase) {
-        combinedChars = combinedChars.concat(lowercase);
+        pass.concat(lowercase)
     }
-
     if (includeUppercase) {
-        combinedChars = combinedChars.concat(uppercase);
+        pass.concat(uppercase)
     }
-
     if (includeNumbers) {
-        combinedChars = combinedChars.concat(numbers);
+        pass.concat(numbers)
     }
-
     if (includeSpecials) {
-        combinedChars = combinedChars.concat(specialCharacters);
+        pass.concat(specials)
     }
 
-    for (var count = 0; count < choices[0]; count++) {
-        var randomIndex = Math.floor(Math.random() * combinedChars.length);
-
-        password += combinedChars[randomIndex];
-    }
-
-    return password
 }
 
 var pass = generatePass();
+
 console.log(pass);
