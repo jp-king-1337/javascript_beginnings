@@ -70,6 +70,6 @@ function generatePass() {
     return pass;
 }
 
-var pass = generatePass();
+var password = generatePass();
 
-console.log(pass);
+console.log(password);
