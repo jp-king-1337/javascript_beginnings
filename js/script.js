@@ -42,24 +42,25 @@ function generatePass() {
 
     var pass = "";
 
-    var charAmount = choices[0]
-    var includeLowercase = choices[1]
-    var includeUppercase = choices[2]
-    var includeNumbers = choices[3]
-    var includeSpecials = choices[4]
-    
-    
+    var charAmount = choices[0];
+    var includeLowercase = choices[1];
+    var includeUppercase = choices[2];
+    var includeNumbers = choices[3];
+    var includeSpecials = choices[4];
+    var chosenChars = [];
+
+
     if (includeLowercase) {
-        pass.concat(lowercase)
+        pass.concat(lowercase);
     }
     if (includeUppercase) {
-        pass.concat(uppercase)
+        pass.concat(uppercase);
     }
     if (includeNumbers) {
-        pass.concat(numbers)
+        pass.concat(numbers);
     }
     if (includeSpecials) {
-        pass.concat(specials)
+        pass.concat(specials);
     }
 
     return generatePass();
