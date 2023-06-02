@@ -6,8 +6,11 @@ var studentData = {
     course: "FSF"
 };
 
-var studentName = students[0];
+// var studentName = students[0];
 
-var studentCourse = students[1];
+// var studentCourse = students[1];
+
+var studentName = studentData.name;
+var studentCourse = studentData.course;
 
 console.log(studentName, studentCourse);
