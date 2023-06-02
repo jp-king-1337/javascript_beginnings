@@ -69,10 +69,12 @@ function generatePass() {
         // Grab a random character from the chosenCharSets array
         var randomNum = Math.random();
         var randomIndex = Math.floor(randomNum * chosenCharSets.length)
+        var randomCharacter = chosenCharSets[randomIndex];
+
+        pass += randomCharacter;
     }
     
-
-
+    
     return pass;
 }
 
