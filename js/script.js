@@ -9,11 +9,14 @@ var studentData = {
     age: 26,
     someFunc: function() {
         console.log("Wait, what?!");
+    },
+    printInfo: function() {
+        console.log("Name: ", this.name);
     }
 };
 
 
-studentData.someFunc();
+studentData.printInfo();
 
 // var studentName = students[0];
 
