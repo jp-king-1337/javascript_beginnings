@@ -65,7 +65,7 @@ function generatePass() {
 
     console.log(chosenCharSets);
 
-    for (var count = 0)
+    for (var count = 0; )
     
 
 
