@@ -63,7 +63,6 @@ function generatePass() {
         chosenCharSets = chosenCharSets.concat(specials);
     }
 
-    console.log(chosenCharSets);
 
     for (var count = 0; count < charAmount; count++) {
         // Grab a random character from the chosenCharSets array
@@ -73,8 +72,8 @@ function generatePass() {
 
         pass += randomCharacter;
     }
-    
-    
+
+
     return pass;
 }
 
