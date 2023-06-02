@@ -73,4 +73,6 @@ function generatePass() {
 
 var password = generatePass();
 
-console.log(password);
+var outputParagraph = document.querySelector(".password-output");
+
+outputParagraph.innerText = password;
