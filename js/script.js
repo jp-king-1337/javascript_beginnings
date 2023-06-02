@@ -42,11 +42,12 @@ function generatePass() {
 
     var pass = "";
 
-
+    var charAmount = choices[0]
     var includeLowercase = choices[1]
     var includeUppercase = choices[2]
     var includeNumbers = choices[3]
     var includeSpecials = choices[4]
+    
     
     if (includeLowercase) {
         pass.concat(lowercase)
@@ -61,6 +62,7 @@ function generatePass() {
         pass.concat(specials)
     }
 
+    return generatePass();
 }
 
 var pass = generatePass();
