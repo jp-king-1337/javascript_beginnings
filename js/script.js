@@ -2,7 +2,7 @@
 var lowercase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var uppercase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-var specials = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~']
+var specials = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~'];
 // Example of concatenation.
 var combinedArrays = lowercase.concat(uppercase).concat(numbers).concat(specials);
 
@@ -61,7 +61,7 @@ function generatePass() {
     for (var count = 0; count < charAmount; count++) {
         // Grab a random character from the chosenCharSets array
         var randomNum = Math.random();
-        var randomIndex = Math.floor(randomNum * chosenCharSets.length)
+        var randomIndex = Math.floor(randomNum * chosenCharSets.length);
         var randomCharacter = chosenCharSets[randomIndex];
 
         pass += randomCharacter;
