@@ -1,11 +1,25 @@
-fetch("https://swapi.dev/api/people")
-    .then(function(res) {
-        return res.json();
-    })
-    .then(function(data) {
-        console.log(data.results[3].films[2]);
-    });
 
 
-// milkyway.sol.earth.continents[1].countries[2].state.county.city[23].street[12].house[0].floor[1].room[1].closet
-// As an example, this would dig from the galaxy down to a closet
+
+// console.log(window);
+
+
+// setInterval(function() {
+//     console.log("Run this code.");
+// }, 1000)
+
+
+function myFunc(one, two, callback) {
+    // function myFunc(parameter1, parameter2, parameter3)
+    callback("some callback argument");
+}
+
+myFunc(10, "some st", function (blah) { console.log(blah) });
+// myFunc(argument1, argument2, argument3)
+// argument3 = function (parameter) { console.log(parameter)}
+
+// myFunc is the main function call
+// We pass through 3 arguments. The third is the anonymous function.
+// The third argument is passed into myFunc as the third parameter.
+// The function (str) { console.log(str) }) is now equal to     callback("some callback argument");
+
