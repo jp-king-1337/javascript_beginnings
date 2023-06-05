@@ -36,6 +36,12 @@ var users = [
     },
 ]
 
+var jane = users.find(function(userObj) {
+    if (userObj.name === "Jane") return true;
+});
+
+console.log(jane);
+
 // console.log(users[2].healthcare.medications.types[1].pillSize);
 // console.log(users[1].name)
 // users[1] is the object - followed by a . - followed by a key
@@ -70,7 +76,12 @@ var un = {
     something: ["apple", "orange"]
 };
 
-console.log(un.blah);
+
+const fruits = ["apple", "orange", "grape", {name: "JD"}, ["one", "two"]];
+
+var result = fruits.includes("apple");
+
+console.log(result);
 
 
 // jd.haveBirthday();
