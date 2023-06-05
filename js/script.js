@@ -1,3 +1,26 @@
+// var fruits = ["apple", "grape", "kiwi"];
+
+
+var users = [
+    {
+        name: "JD",
+        age: 43
+    },
+    {
+        name: "Jane",
+        age: 35
+    },
+    {
+        name: "Bob",
+        age: 99
+    },
+]
+
+console.log(users[1]);
+
+
+
+
 
 
 var oldStudentData = ["Matthew", "FSF"];
@@ -7,34 +30,13 @@ var studentData = {
     university: "Rutgers",
     location: "New Jersey",
     age: 26,
-    someFunc: function() {
+    someFunc: function () {
         console.log("Wait, what?!");
     },
-    printInfo: function() {
+    printInfo: function () {
         console.log("Name: ", this.name);
     }
 };
 
 
 studentData.printInfo();
-
-// var studentName = students[0];
-
-// var studentCourse = students[1];
-
-// var studentName = studentData.name;
-// var studentCourse = studentData.course;
-
-// console.log(studentName, studentCourse);
-
-// console.log(studentName.location);
-
-// var fruits = ["orange", "apple", "grape"];
-// var str = "some string";
-
-// console.log(str.length);
-
-// var strData = {
-//     value: "some string",
-//     length: 11
-// }
