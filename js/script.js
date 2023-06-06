@@ -1,12 +1,17 @@
 var body = document.body;
-var btnElObject = document.getElementById("start");
+// var btnElObject = document.getElementById("start");
+// .getElementById is no longer used, because .querySelector is now the standard.
+var btnElObject = document.querySelector("#start");
+var mainEl = document.querySelector(".main-content");
+var liEl = document.querySelector("ul li:last-child")
 
-document.body.children[1].children[0].children[0];
 
 // console.log(btnElObject);
 // btnElObject.innerText = "something else";
 // btnElObject.style.backgroundColor = "#301934";
 // btnElObject.style.color = "#fff";
+mainEl.style.backgroundColor = "red";
+
 
 btnElObject.addEventListener("click", function () {
     body.classList.add("explosion");
