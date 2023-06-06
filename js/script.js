@@ -1,8 +1,13 @@
-
+var body = document.body;
 var btnElObject = document.getElementById("start");
 
-btnElObject.innerText = "something else";
+// console.log(btnElObject);
+// btnElObject.innerText = "something else";
+// btnElObject.style.backgroundColor = "#301934";
+// btnElObject.style.color = "#fff";
 
+btnElObject.addEventListener("click", function() {body.classList.add("explosion");
+});
 
 
 
