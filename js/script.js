@@ -68,7 +68,7 @@ for (var index = 0; index < questionData.length; index++) {
 
 
     questionDiv.innerHTML = `
-        <h2>${questionObj.question}</h2 >
+        <h2>Question: ${questionObj.question}</h2 >
         <p>Answer: ${questionObj.answer}</p>
     `;
 
