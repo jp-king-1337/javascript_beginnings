@@ -3,7 +3,7 @@ var body = document.body;
 // .getElementById is no longer used, because .querySelector is now the standard.
 var btnElObject = document.querySelector("#start");
 var mainEl = document.querySelector(".main-content");
-var liEl = document.querySelector("ul li:last-child")
+// var liEl = document.querySelector("ul li:last-child")
 
 
 // console.log(btnElObject);
