@@ -1,4 +1,7 @@
 
+var btnElObject = document.getElementById("start");
+
+btnElObject.innerText = "something else";
 
 
 
@@ -23,19 +26,17 @@
 
 
 
+// function getProduct(a, b) {
+//     return a * b;
+// }
 
+// var product = getProduct(5, 5);
 
-function getProduct(a, b) {
-    return a * b;
-}
+// function doSomething(whatAmI, blah) {
+//     whatAmI("arg passed to callback");
+//     console.log(blah);
+// }
 
-var product = getProduct(5, 5);
-
-function doSomething(whatAmI, blah) {
-    whatAmI("arg passed to callback");
-    console.log(blah);
-}
-
-doSomething(function(youGotThis) {
-    console.log("callback called");
-}, 10);
+// doSomething(function(youGotThis) {
+//     console.log("callback called");
+// }, 10);
