@@ -1,16 +1,16 @@
 html, body {
-    height: 100%;
+  height: 100%;
 }
 
 @keyframes colorExplosion {
-    from {
-        background-color: orange;
-    }
-    to {
-        background-color: blue;
-    }
+  from {
+    background-color: orange;
+  }
+  to {
+    background-color: blue;
+  }
 }
 
 body.explosion {
-    animation: colorExplosion 5s infinite alternate;
+  animation: colorExplosion 5s infinite alternate;
 }

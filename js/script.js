@@ -1,23 +1,6 @@
-// var link = document.querySelector("#link");
-var div = document.querySelector("div");
+// Target all the li's in the ul and add an event
+// listener to each li that console logs the innerText
+// of the li
 
-function triggered(eventObj) {
-    if (eventObj.target.tagName === "BUTTON") {
-        console.log(eventObj.target);
-    }
-}
-
-div.addEventListener("click", triggered);
-
-
-
-
-
-
-// function stopTheDefault(eventObj) {
-//     eventObj.preventDefault();
-
-//     eventObj.target.innerText = "Something Else";
-// }
-
-// link.addEventListener("click", stopTheDefault);
+// Target the ul and add an event listener that console
+// logs the innerText of the li tha was clicked
