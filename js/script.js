@@ -4,6 +4,7 @@
 
 var listItem = document.querySelectorAll("ul li");
 var unordList = document.querySelector("ul");
+var userAnswer = "Document Object Model"
 
 // listItem.forEach(function(li) {
 //     li.addEventListener("click", function() {
@@ -23,7 +24,16 @@ function clicked(eventObj) {
     var el = eventObj.target;
 
     if (el.tagName === "LI") {
-        console.log(el.innerText);
+        if (el.innerText === userAnswer) {
+            console.log("You are correct!");
+            el.classList.add("correct");
+            alert("You are correct!");
+            if (el.innerText === !userAnswer) {
+                el.classList.add("wrong");
+            }
+        } else {
+            console.log("Wrong...");
+        }
     }
 }
 

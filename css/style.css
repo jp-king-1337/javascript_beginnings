@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -6,6 +7,7 @@ html, body {
   from {
     background-color: orange;
   }
+
   to {
     background-color: blue;
   }
@@ -13,4 +15,12 @@ html, body {
 
 body.explosion {
   animation: colorExplosion 5s infinite alternate;
+}
+
+.correct {
+  background-color: aquamarine;
+}
+
+.wrong {
+  background-color: maroon;
 }
