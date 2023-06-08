@@ -1,26 +1,11 @@
-html,
-body {
+html, body {
   height: 100%;
 }
 
-@keyframes colorExplosion {
-  from {
-    background-color: orange;
-  }
-
-  to {
-    background-color: blue;
-  }
+body {
+  padding: 10%;
 }
 
-body.explosion {
-  animation: colorExplosion 5s infinite alternate;
-}
-
-.correct {
-  background-color: aquamarine;
-}
-
-.wrong {
-  background-color: maroon;
+form {
+  margin-bottom: 25px;
 }
