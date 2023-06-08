@@ -34,6 +34,8 @@ function getUserInput(eventObj) {
     localStorage.setItem("email-address", email);
     // email-address is the key, email is the value
     localStorage.setItem("password-value", pass);
+
+    showUserData();
 }
 
 // Initial process or app start tasks
