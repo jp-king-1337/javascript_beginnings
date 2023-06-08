@@ -2,7 +2,7 @@
 
 // Target the ul and add an event listener that console logs the innerText of the li tha was clicked
 
-// var listItem = document.querySelectorAll("ul li");
+var listItem = document.querySelectorAll("ul li");
 var unordList = document.querySelector("ul");
 
 // listItem.forEach(function(li) {
@@ -21,10 +21,9 @@ var unordList = document.querySelector("ul");
 // JD SOLUTION
 function clicked(eventObj) {
     var el = eventObj.target;
-    var ignore = el.classList.contains("not-me");
 
-    if (!ignore) {
-        console.log("Clicked!");
+    if (el.tagName === "LI") {
+        console.log(el.innerText);
     }
 }
 
