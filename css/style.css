@@ -13,18 +13,3 @@ form {
   flex-direction: column;
   width: 400px;
 }
-
-form input,
-form button {
-  padding: 6px 10px;
-  margin-bottom: 8px;
-  border-radius: 5px;
-}
-
-form button {
-  border: none;
-  padding: 7px 10px;
-  background-color: lightseagreen;
-  color: #fff;
-  cursor: pointer;
-}
