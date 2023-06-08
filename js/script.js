@@ -21,7 +21,7 @@ function showUserData() {
     var userData = getUserData();
 
     emailOutput.innerText = `Email: ${userData.email}`;
-    passOutput.innerText = `Email: ${userData.password}`;
+    passOutput.innerText = `Password: ${userData.password}`;
 }
 
 
