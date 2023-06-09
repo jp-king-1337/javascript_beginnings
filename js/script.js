@@ -51,21 +51,20 @@ function saveUserClicks(eventObj) {
 function showScores() {
     var users = getUserData();
     var scoresDiv = document.querySelector(".scores");
-    var div = document.createElement("div");
 
     scoresDiv.innerHTML = "";
 
     if (users.length === 0) {
-        // div.classList.add("score");
+        div.classList.add("score");
 
-        // var p = document.createElement("p");
-        // p.innerText = `No ${userObj.name}s or ${userObj.clicks} Yet!`
-        // div.append(p);
+        var p = document.createElement("p");
+        p.innerText = `No ${userObj.name}s or ${userObj.clicks} Yet!`
+        div.append(p);
 
-        scoresDiv.innerHTML = "";
     }
 
     for (var userObj of users) {
+        var div = document.createElement("div");
         div.classList.add("score");
 
         var h3 = document.createElement("h3");
