@@ -55,12 +55,7 @@ function showScores() {
     scoresDiv.innerHTML = "";
 
     if (users.length === 0) {
-        div.classList.add("score");
-
-        var p = document.createElement("p");
-        p.innerText = `No ${userObj.name}s or ${userObj.clicks} Yet!`
-        div.append(p);
-
+        scoresDiv.innerHTML = "<p>No scores yet!</p>"
     }
 
     for (var userObj of users) {
