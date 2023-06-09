@@ -3,7 +3,10 @@ var clickBtn = document.querySelector("#click-button");
 var input = document.querySelector("#name-input")
 var clicks = 0;
 
-// TASK: Create a function that increases clicks each time the button is pressed and outputs the click amount to the window.
+var users = localStorage.getItem("users");
+var jsVal = JSON.parse(users);
+console.log(jsVal)
+
 
 // BASIC:
 // Store the user name and click amount to localStorage
@@ -12,19 +15,39 @@ var clicks = 0;
 // When the user enters their name, you’ll grab the array, add a user object to it and then replace the old array with the new array
 
 function addClick() {
-    // Increase clicks by one
     clicks++;
 
-    // Output clicks to the h1
     clickOutput.innerText = "Clicks: " + clicks;
 
     return clicks;
 }
 
+function clearData() {
+    input.value = "";
+    clicks = 0;
+    clickOutput.innerText = "Clicks: 0";
+}
+
+function getUserData() {
+    var rawData = localStorage.getItem("users");
+    var parsed = JSON.parse(rawData);
+
+    return parsed;
+}
+
 function saveUserClicks(eventObj) {
     if (eventObj.keyCode === 13) {
-        localStorage.a
+        var userScore = {
+            name: input.value,
+            clicks: clicks
+        };
+
+        var jsonVersion = JSON.stringify([userScore]);
+        localStorage.setItem("users", [jsonVersion]);
+
+        clearData();
     }
+
 }
 
 clickBtn.addEventListener("click", addClick);
